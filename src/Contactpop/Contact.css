@@ -1,0 +1,90 @@
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.contact-popup{
+    position: absolute;
+    z-index: 1;
+    display: grid;
+  background-color: #00000090;
+  width: 100%;
+  height: 100%;
+}
+.contact-container{
+    place-self: center;
+  width: max(23vw, 330px);
+  color: #808080;
+  background-color: white;
+   display: flex;
+   flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+     animation: FadeIn 0.3s ;
+}
+.talk-tome{
+    display: flex;
+    justify-content: space-between;
+}
+.talk-tome p{
+    color: coral;
+    font-weight: bold;
+}
+.talk-tome img{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    align-self: center;
+}
+.name-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-container input
+{
+    flex: 1;
+    outline: none;
+    border: 1px solid coral;
+    border-radius: 4px;
+    font-size: 15px;
+   padding: 10px;
+   font-weight: 500;
+}
+.message-container textarea {
+  outline: none;
+  border: 1px solid wheat;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  min-height: 100px;
+  resize: vertical;
+ width: 95%;
+}
+.popup-button{
+    padding: 10px;
+    background-color:  coral;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 1024px){
+.contact-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+}
+
+}
