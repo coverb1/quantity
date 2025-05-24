@@ -46,8 +46,8 @@ duration={500}
 </div>
 
 <div className="button-container">
-  <button className="btn-solid">My Cv↗</button>
-  <button className="btn-outline">Hire me</button>
+  <a href={assets.CVIneza}><button className="btn-solid" >My Cv↗</button></a>
+  <button className="btn-outline" onClick={()=>setshowcontact(true)}>Hire me</button>
 </div>
 
 <motion.div
