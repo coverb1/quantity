@@ -229,6 +229,9 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 2em;
 padding-right: 2em;
+padding: 0;
+    margin: 0;
+    width: 100%; 
     }
     .openmenu{
         display: flex;
@@ -244,11 +247,10 @@ padding-right: 2em;
 .body-container{
     display: flex;
     flex-direction: column;
+    padding: 0 10px
 }
 .lelt-container{
-    margin-right: 40%;
-    position: absolute;
-    bottom: -500px;
+   display: none;
 }
 .middle-container img{
     width: 300px;
@@ -288,8 +290,11 @@ margin-top: 150px;
 width: 70%;
 }
 .left-body{ 
-    font-size: 10px;
+padding: 0 10px
 }
+.who-iam {
+    padding: 10px; 
+  }
 }
 
 
